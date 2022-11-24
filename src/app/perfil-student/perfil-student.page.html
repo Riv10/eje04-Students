@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil del Estudiante</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <img [src]="student.photo" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="user-meta ion-text-center">
+    <h3 class="studentname">{{student.name}}</h3>
+    <h5 class="infostudent">{{student.controlNumber}}</h5>
+    <h5 class="infostudent">{{student.career}}</h5>
+    <h5 class="infostudent">{{student.age}}</h5>
+    <h5 class="infostudent">{{student.email}}</h5>
+  </div>
+</ion-content>
